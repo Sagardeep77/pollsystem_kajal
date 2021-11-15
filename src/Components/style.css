@@ -1,0 +1,8 @@
+
+.admin,.new{
+    text-decoration: none;
+    padding:10px;
+}
+.admin,.new:hover{
+    background-color: gray;
+}
