@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.op1,
+.op2 {
+  margin: auto;
+  margin-left: 100px;
+}
+.new2 {
+  background: rgb(201, 76, 76, 0.3);
+  height: 100vh;
+  width: 100vw;
+  padding-top: 100px;
+}
+.con {
+  margin: 0;
+  padding: 0;
+}
+.inputbox {
+  height: 6vh;
+  margin: 10px;
+  width: 90%;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 5px 1px grey;
+  color: black;
+  padding: 0.2rem 1rem;
+}
+.inputbox:focus {
+  outline-color: #3498db;
+  box-shadow: 0px 0px 5px 1px #5dade2;
+}
+
+.In::-webkit-input-placeholder {
+  color: blue;
+}
+
+.add-button {
+  width: 70%;
+  padding: 9px;
+  font-weight: 500;
+  border-radius: 500px;
+  background-color: #008cba;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.poll-card-wrapper-container {
+  text-align: center;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.poll-card-container {
+  width: 80%;
+  box-shadow: 0 0 5px 1px #ced3d3;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+.form_container {
+  padding: 2rem;
+}
+.option-container-wrapper {
+  width: 100%;
+}
+.question_label {
+  margin-left: 1rem;
+  font-size: x-large;
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-weight: 600;
+}

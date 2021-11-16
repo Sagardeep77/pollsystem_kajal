@@ -1,12 +1,8 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuffer } from '@fortawesome/free-solid-svg-icons'
 import {BrowserRouter as Router, Route,Routes, Link} from 'react-router-dom';
-import"./style.css";
-
+import"./admin.css";
 import Adminpoll from "./Adminpoll";
 import Newpoll from "./Newpoll";
 
@@ -17,7 +13,8 @@ const Admin = () => {
         <>
         <Router>
         
-        <div className="all">
+        <div className="wrapper">
+         
         
         <Navbar bg="dark" variant="">
           <Container>
@@ -29,6 +26,9 @@ const Admin = () => {
                </Nav>
           </Container>
         </Navbar>
+        {/* <div className="header">
+        POLL-WORLD
+      </div> */}
       
       <Routes>
           <Route exact path="/adminpoll" element={<Adminpoll/>} />
