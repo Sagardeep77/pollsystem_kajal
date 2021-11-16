@@ -10,7 +10,7 @@ const Newpoll = () =>{
   
         <form className="new">
         <div className="cc">
-         <label > Question no 1.</label>
+         <label clasName="lb"> Question no 1.</label>
         <input type="text"  placeholder="     add a new question" className="lb"/>
         <button id="bd">Add</button> 
            
