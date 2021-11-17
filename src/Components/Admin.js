@@ -28,8 +28,8 @@ const Admin = () => {
         </Navbar>
         {/* <div className="header">
         POLL-WORLD
-      </div> */}
-      
+      </div>
+       */}
       <Routes>
           <Route exact path="/adminpoll" element={<Adminpoll/>} />
           <Route exact path="/newpoll" element={<Newpoll/>} />
