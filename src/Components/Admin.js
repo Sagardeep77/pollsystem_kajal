@@ -30,6 +30,7 @@ const Admin = () => {
         POLL-WORLD
       </div>
        */}
+       {/* using router */}
       <Routes>
           <Route exact path="/adminpoll" element={<Adminpoll/>} />
           <Route exact path="/newpoll" element={<Newpoll/>} />
