@@ -4,10 +4,11 @@ import Admin from "./Components/Admin";
 import Adminpoll from "./Components/Adminpoll";
 import Newpoll from "./Components/Newpoll";
 import Options from "./Components/Options";
+import Register from './Containers/Register';
 function App() {
   return (
     <div className="App">
-      <Admin />
+      {/* <Admin /> */}
       {/* <div className="header">
         POLL-WORLD
       </div> */}
@@ -15,6 +16,7 @@ function App() {
       {/* <Options/> */}
       {/* <Adminpoll/> */}
       {/* <Login/> */}
+      <Register/>
     </div>
   );
 }
