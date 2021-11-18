@@ -5,9 +5,11 @@ import Adminpoll from "./Components/Adminpoll";
 import Newpoll from "./Components/Newpoll";
 import Options from "./Components/Options";
 import Register from './Containers/Register';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+     
       {/* <Admin /> */}
       {/* <div className="header">
         POLL-WORLD
@@ -15,8 +17,24 @@ function App() {
       {/* <Newpoll /> */}
       {/* <Options/> */}
       {/* <Adminpoll/> */}
-      {/* <Login/> */}
+      <BrowserRouter>
+      <Routes>
+      {/* <Route exact path="/" element={<Login/>}/> */}
+            {/* {/* <Login /> */}
+          {/* </Route> */} 
+      <Route exact path="/Admin" element={<Admin/>} />
+
+       {/* <Admin/>
+               </Route>  */}
+       {/* <Route exact path="/Adminpoll" element={<Adminpoll/>} /> */}
+       <Route exact path="/Adminpoll" element={<Adminpoll/>} />
+       <Route exact path="/Newpoll" element={<Newpoll/>} />
+       <Route exact path="/Login" element={<Login/>} />
+      </Routes>
       <Register/>
+      </BrowserRouter>
+     
+
     </div>
   );
 }

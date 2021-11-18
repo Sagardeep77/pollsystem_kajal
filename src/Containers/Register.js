@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-// import React,{usestate} from "react";
 import "./register.css";
+import {BrowserRouter as Router,useNavigate, Routes} from 'react-router-dom';
+
 
 const Register = () => {
+  let navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmpassword] = useState("");
-
-  return (
+ 
+  return (    
     <div className="register-wrapper">
       <h1>Register Now!</h1>
       <h6>Get started with your free account</h6>
@@ -32,7 +34,7 @@ const Register = () => {
         <div className="input-container">
           <label className="user-label">Password:</label>
           <input
-            type="text"
+            type="password"
             placeholder="Letters and numbers required"
             className="input-box"
           />
@@ -40,13 +42,13 @@ const Register = () => {
         <div className="input-container">
           <label className="user-label">Confirmpassword:</label>
           <input
-            type="text"
+            type="password"
             placeholder="Letters and numbers required"
             className="input-box"
           />
         </div>
         <div>
-            <button className="signup-button">Sign up</button>
+            <button className="signup-button" onClick={ async => navigate('/Login' )}>Sign up</button>
         </div>
         <h6 className="heading">Already have an account? Login here</h6>
       </div>

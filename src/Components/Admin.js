@@ -11,7 +11,7 @@ import Newpoll from "./Newpoll";
 const Admin = () => {
     return (
         <>
-        <Router>
+        {/* <Router> */}
         
         <div className="wrapper">
          
@@ -22,6 +22,8 @@ const Admin = () => {
             <Nav>
                 <Link to="/adminpoll" className="admin" > Add new user  </Link>
                 <Link to="/newpoll" className="new"> Create a new poll </Link>
+                <Link to="/addlist" className="list">Poll list</Link>
+
                 
                </Nav>
           </Container>
@@ -36,7 +38,7 @@ const Admin = () => {
           <Route exact path="/newpoll" element={<Newpoll/>} />
           </Routes>
           </div>
-        </Router>
+        {/* </Router> */}
         
         </>
             
